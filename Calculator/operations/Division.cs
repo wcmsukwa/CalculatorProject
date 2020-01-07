@@ -6,12 +6,12 @@ namespace operations
 {
     public class Division
     {
-        public static int Divide(int a, int b)
+        public static int Quotient(int a, int b)
         {
             return a / b;
         }
 
-        public static double Divide(double a, double b)
+        public static double Quotient(double a, double b)
         {
             return a / b;
         }

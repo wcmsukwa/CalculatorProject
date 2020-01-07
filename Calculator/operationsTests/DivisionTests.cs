@@ -12,7 +12,8 @@ namespace operations.Tests
         private  int intA;
         private  int intB;
         private  double doubleA ;
-        private  double doubleB ;
+        private  double doubleB;
+        private  double doubleC;
 
         [TestInitialize]
         public void SetUp()
@@ -21,6 +22,7 @@ namespace operations.Tests
             // common Arrange
             doubleA = rand.getDouble();
             doubleB = rand.getDouble();
+            doubleC = 0;
             intA = rand.getInt();
             intB = rand.getInt();
         }
@@ -28,16 +30,22 @@ namespace operations.Tests
         [TestMethod()]
         public void DivideTest()
         {
-            Assert.AreEqual(0, Division.Divide(intA, intB));
+            Assert.AreEqual(0, Division.Quotient(intA, intB));
         }
 
         [TestMethod()]
         public void DivideDoubleTest()
         {
-            Assert.AreEqual(1.0952380952380953, Division.Divide(doubleA, doubleB));
+            Assert.AreEqual(1.0952380952380953, Division.Quotient(doubleA, doubleB));
         }
 
-        
+        [TestMethod()]
+        public void DivideByZeroTest()
+        {
+            Assert.ThrowsException<DivideByZeroException>( () => Division.Quotient(doubleA, doubleC));
+        }
+
+
 
     }
 }
