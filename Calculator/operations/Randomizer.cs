@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations
 {
@@ -14,7 +12,7 @@ namespace operations
 
         public int getDouble()
         {
-            return ( rand.Next(100, 499) / 10 );
+            return (rand.Next(111, 499) / 10);
         }
 
 

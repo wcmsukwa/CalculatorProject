@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace operations
+﻿namespace operations
 {
     public class Addition
     {
@@ -17,8 +15,9 @@ namespace operations
         public static double Sum(double[] arrayA)
         {
             double a = 0.0;
-            foreach(double b in arrayA){
-                a = Sum(a,b);
+            foreach (double b in arrayA)
+            {
+                a = Sum(a, b);
             }
             return a;
         }

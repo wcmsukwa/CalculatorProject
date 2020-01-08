@@ -1,18 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
 
-    
+
     [TestClass()]
     public class SquareRootTests
     {
-        private  double doubleA;
-        private  int intA ;
+        private double doubleA;
+        private int intA;
 
         [TestInitialize]
         public void SetUp()
@@ -32,7 +28,7 @@ namespace operations.Tests
         [TestMethod()]
         public void SquarerootDoubleTest()
         {
-            Assert.AreEqual(4.795831523312719, SquareRoot.Squareroot(doubleA));
+            Assert.AreEqual(4.898979485566356, SquareRoot.Squareroot(doubleA));
         }
     }
 }

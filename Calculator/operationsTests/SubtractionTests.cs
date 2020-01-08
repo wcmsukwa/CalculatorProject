@@ -1,18 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
     [TestClass()]
     public class SubtractionTests
     {
-        private  int intA = 10;
-        private  int intB = 20;
-        private  double doubleA ;
-        private  double doubleB ;
+        private int intA = 10;
+        private int intB = 20;
+        private double doubleA;
+        private double doubleB;
 
         [TestInitialize]
         public void SetUp()
@@ -28,13 +24,13 @@ namespace operations.Tests
         [TestMethod()]
         public void SubtractTest()
         {
-            Assert.AreEqual(-7, Subtraction.Subtract(intA,intB));
+            Assert.AreEqual(-7, Subtraction.Subtract(intA, intB));
         }
 
         [TestMethod()]
         public void SubtractDoubleTest()
         {
-            Assert.AreEqual(2, Subtraction.Subtract(doubleA,doubleB));
+            Assert.AreEqual(2, Subtraction.Subtract(doubleA, doubleB));
         }
     }
 }

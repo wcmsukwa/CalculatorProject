@@ -9,6 +9,6 @@ namespace operations
             return Math.Sqrt(a);
         }
 
-               
+
     }
 }

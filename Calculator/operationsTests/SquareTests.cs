@@ -1,18 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
-  
+
 
     [TestClass()]
     public class SquareTests
     {
-        private  int intA;
-        private  double doubleA;
+        private int intA;
+        private double doubleA;
 
         [TestInitialize]
         public void SetUp()
@@ -32,7 +28,7 @@ namespace operations.Tests
         [TestMethod()]
         public void SquaredDoubleTest()
         {
-            Assert.AreEqual(529, Square.Squared(doubleA));
+            Assert.AreEqual(576, Square.Squared(doubleA));
         }
     }
 }

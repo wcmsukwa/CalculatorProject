@@ -1,18 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
-  
+
 
     [TestClass()]
     public class CubeTests
     {
-        private  int intA ;
-        private  double doubleA ;
+        private int intA;
+        private double doubleA;
 
         [TestInitialize]
         public void SetUp()
@@ -26,7 +22,7 @@ namespace operations.Tests
         [TestMethod()]
         public void CubedTest()
         {
-            
+
 
             Assert.AreEqual(216, Cube.Cubed(intA));
         }
@@ -34,7 +30,7 @@ namespace operations.Tests
         [TestMethod()]
         public void CubedDoubleTest()
         {
-            Assert.AreEqual(12167, Cube.Cubed(doubleA));
+            Assert.AreEqual(13824, Cube.Cubed(doubleA));
         }
     }
 }

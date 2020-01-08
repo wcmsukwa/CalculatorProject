@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
@@ -10,12 +6,12 @@ namespace operations.Tests
     public class AdditionTests
     {
 
-        private  int a ;
-        private  int b ;
-        private  double c ;
-        private  double d ;
-        private  double[] arrayA ;
-        private  int[] arrayB  ;
+        private int a;
+        private int b;
+        private double c;
+        private double d;
+        private double[] arrayA;
+        private int[] arrayB;
 
         [TestInitialize]
         public void SetUp()
@@ -34,13 +30,13 @@ namespace operations.Tests
         [TestMethod()]
         public void SumTest()
         {
-            Assert.AreEqual(17,Addition.Sum(a,b) );
+            Assert.AreEqual(27, Addition.Sum(a, d));
         }
 
         [TestMethod()]
         public void SumDoubleTest()
         {
-            Assert.AreEqual(44, Addition.Sum(c, d));
+            Assert.AreEqual(46, Addition.Sum(c, d));
         }
 
         [TestMethod()]

@@ -1,20 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
-    
+
 
     [TestClass()]
     public class MultiplicationTests
     {
-        private  int intA ;
-        private  int intB ;
-        private  double doubleA ;
-        private  double doubleB ;
+        private int intA;
+        private int intB;
+        private double doubleA;
+        private double doubleB;
 
         [TestInitialize]
         public void SetUp()
@@ -36,7 +32,7 @@ namespace operations.Tests
         [TestMethod()]
         public void MultiplyDoubleTest()
         {
-            Assert.AreEqual(483, Multiplication.Multiply(doubleA, doubleB));
+            Assert.AreEqual(528, Multiplication.Multiply(doubleA, doubleB));
         }
     }
 }

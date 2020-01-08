@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace operations
+﻿namespace operations
 {
     public class Subtraction
     {
@@ -13,6 +11,6 @@ namespace operations
         {
             return a - b;
         }
-               
+
     }
 }

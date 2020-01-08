@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\operations\operations.csproj" />
+    <ProjectReference Include="..\Add\Add.csproj" />
+    <ProjectReference Include="..\Cube\Cube.csproj" />
+    <ProjectReference Include="..\Divide\Divide.csproj" />
+    <ProjectReference Include="..\Multiply\Multiply.csproj" />
+    <ProjectReference Include="..\SquareRoot\SquareRoot.csproj" />
+    <ProjectReference Include="..\Square\Square.csproj" />
+    <ProjectReference Include="..\Subtract\Subtract.csproj" />
   </ItemGroup>
 
 </Project>
