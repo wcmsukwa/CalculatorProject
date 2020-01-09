@@ -10,6 +10,14 @@ namespace BasicCalculator
 {
     public interface ICalculator
     {
+        public dynamic Add(dynamic a, dynamic b);
+        public dynamic Add(dynamic a);
+        public dynamic Cubed(dynamic a);
+        public dynamic Divide(dynamic a, dynamic b);
+        public dynamic Multiply(dynamic a, dynamic b);
+        public dynamic Squared(dynamic a);
+        public dynamic Squareroot(dynamic a);
+        public dynamic Subtract(dynamic a, dynamic b);
 
     }
     public class Calculator : IAdd, ICube, IMultiply, ISubtract, IDivide, ISquare, ISquareRoot
