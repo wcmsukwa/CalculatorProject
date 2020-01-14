@@ -1,15 +1,17 @@
 ﻿namespace operations
 {
-    public class Addition
+    public static class Addition
     {
         public static int Sum(int a, int b)
         {
             return a + b;
+               
         }
 
         public static double Sum(double a, double b)
         {
-            return a + b;
+            var c = a + b;
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
 
         public static double Sum(double[] arrayA)
@@ -19,7 +21,8 @@
             {
                 a = Sum(a, b);
             }
-            return a;
+
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(a);
         }
 
         public static int Sum(int[] arrayA)

@@ -1,6 +1,6 @@
 ﻿namespace operations
 {
-    public class Square
+    public static class Square
     {
         public static int Squared(int a)
         {
@@ -9,7 +9,8 @@
 
         public static double Squared(double a)
         {
-            return a * a;
+            var c = a * a;
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
 
     }

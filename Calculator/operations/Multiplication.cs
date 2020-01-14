@@ -1,6 +1,6 @@
 ﻿namespace operations
 {
-    public class Multiplication
+    public static  class Multiplication
     {
         public static int Multiply(int a, int b)
         {
@@ -9,7 +9,8 @@
 
         public static double Multiply(double a, double b)
         {
-            return a * b;
+            var c = a * b;
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
 
 

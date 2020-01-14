@@ -81,9 +81,8 @@ namespace BasicCalculatorTests
         {
             Calculator calculator = new Calculator();
 
-            Assert.AreEqual(2, calculator.Divide(a, b));
-            Assert.AreEqual(2, calculator.result);
-            Assert.ThrowsException<DivideByZeroException>(() => calculator.Divide(a, c));
+            Assert.AreEqual(2.5, calculator.Divide(a, b));
+            Assert.AreEqual(2.5, calculator.result);
         }
     }
 }

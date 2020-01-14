@@ -1,6 +1,6 @@
 ﻿namespace operations
 {
-    public class Subtraction
+    public static class Subtraction
     {
         public static int Subtract(int a, int b)
         {
@@ -9,7 +9,8 @@
 
         public static double Subtract(double a, double b)
         {
-            return a - b;
+            var c = a - b;
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
 
     }

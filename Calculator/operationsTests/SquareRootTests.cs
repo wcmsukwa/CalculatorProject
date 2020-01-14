@@ -22,13 +22,13 @@ namespace operations.Tests
         [TestMethod()]
         public void SquarerootTest()
         {
-            Assert.AreEqual(2.449489742783178, SquareRoot.Squareroot(intA));
+            Assert.AreEqual(2.45, SquareRoot.Squareroot(intA));
         }
 
         [TestMethod()]
         public void SquarerootDoubleTest()
         {
-            Assert.AreEqual(4.898979485566356, SquareRoot.Squareroot(doubleA));
+            Assert.AreEqual(4.9, SquareRoot.Squareroot(doubleA));
         }
     }
 }

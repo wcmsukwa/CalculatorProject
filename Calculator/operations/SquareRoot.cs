@@ -2,11 +2,12 @@
 
 namespace operations
 {
-    public class SquareRoot
+    public static class SquareRoot
     {
         public static double Squareroot(double a)
         {
-            return Math.Sqrt(a);
+            var c = Math.Sqrt(a);
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
 
 

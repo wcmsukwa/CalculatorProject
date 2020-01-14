@@ -1,15 +1,13 @@
 ﻿namespace operations
 {
-    public class Division
+    public static class Division
     {
-        public static int Quotient(int a, int b)
-        {
-            return a / b;
-        }
+       
 
         public static double Quotient(double a, double b)
         {
-            return a / b;
+            var c = a / b;
+            return Helpers.Rounding.RoundToTwoDecimalPlaces(c);
         }
     }
 }
