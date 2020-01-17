@@ -28,5 +28,17 @@ namespace StatisticsCalculator
             result = StatsOperations.StatsOperations.ZSquare(dataPoint, mean, standardDeviation);
             return result;
         }
+
+        public dynamic Median(dynamic values)
+        {
+            result = StatsOperations.StatsOperations.Median(values);
+            return result;
+        }
+
+        public dynamic Mode(dynamic values)
+        {
+            result = StatsOperations.StatsOperations.Mode(values);
+            return result;
+        }
     }
 }

@@ -6,9 +6,9 @@ namespace Helpers
 {
     public class Rounding
     {
-        public static double RoundToTwoDecimalPlaces(double value)
+        public static double RoundToTwoDecimalPlaces(double value,int numberOfDecimalPlaces=2)
         {
-            return Math.Round(value, 2,MidpointRounding.ToEven);
+            return Math.Round(value, numberOfDecimalPlaces, MidpointRounding.ToEven);
         }
     }
 }

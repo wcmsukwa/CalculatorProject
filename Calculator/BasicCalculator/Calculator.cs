@@ -20,7 +20,7 @@ namespace BasicCalculator
         public dynamic Subtract(dynamic a, dynamic b);
 
     }
-    public class Calculator : IAdd, ICube, IMultiply, ISubtract, IDivide, ISquare, ISquareRoot
+    public class    Calculator : IAdd, ICube, IMultiply, ISubtract, IDivide, ISquare, ISquareRoot
     {
         public dynamic result;
         Adding addObject = new Adding();
